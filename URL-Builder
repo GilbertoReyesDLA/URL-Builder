@@ -1,0 +1,528 @@
+<!-- FORM -->
+
+  <form id="form">
+  <div class="form-control">
+        <label for="url">Enter URL:</label>
+        <input type="text" id="url" name="url" required>
+   
+        <br>
+
+<form>
+  <label for="medium">Medium:</label>
+  <select id="medium" onchange="updateSource()">
+    <option value=""></option>
+    <option value="email">Email</option>
+    <option value="social">Organic Social</option>
+    <option value="social-paid">Paid Social</option>
+    <option value="cpc">CPC</option>
+  </select>
+ 
+  <br>
+
+  <label for="source">Source:</label>
+  <select id="source">
+    <!-- Options will be dynamically updated -->
+  </select>
+ 
+  <br>
+
+<label for="region">Region:</label>
+<select id="region" name="region">
+  <option value=""></option>
+  <option value="us">US</option>
+  <option value="international">International</option>
+  <option value="latam">LatAm</option>
+  <option value="canada">Canada</option>
+  <option value="japan">Japan</option>
+  <option value="korea">South Korea</option>
+</select>
+
+  <br>
+
+  <label for="utm_campaign">Select Campaign:</label>
+  <select id="utm_campaign" name="utm_campaign">
+    <option value=""></option>
+    <option value="aaaim-allyship-event">AAAIM Allyship Event</option>
+<option value="aapi-heritage-month">AAPI Heritage Month</option>
+<option value="ai-chatroom">AI ChatRoom</option>
+<option value="ai-laws-world-tool">AI Laws of the World</option>
+<option value="ai-litigation">AI litigation</option>
+<option value="ai-red-teaming">AI Red Teaming</option>
+<option value="ai-cocounsel">AI CoCounsel</option>
+<option value="ai-testing-hc-ls">AI Testing HC LS</option>
+<option value="alumni-navigating-alternative-career-paths">Alumni Navigating Alternative Career Paths</option>
+<option value="alumni-peoplepath">Alumni Peoplepath</option>
+<option value="are-you-ready">Are You Ready</option>
+<option value="asia-ip-symposium">Asia IP Symposium</option>
+<option value="associate-recruiting">Associate Recruiting</option>
+<option value="beyond-the-curve-podcast">Beyond the Curve Podcast</option>
+<option value="bihc-report">BIHC Report</option>
+<option value="bio-med-bootcamp">Bio Med Bootcamp</option>
+<option value="black-history-month">Black History Month</option>
+<option value="board-awareness">Board Awareness</option>
+<option value="building-strong-ip-foundations">Building Strong IP Foundations</option>
+<option value="cgr-speaker-series">CGR Speaker Series</option>
+<option value="chambers">chambers</option>
+<option value="clean-energy-tax-credits">Clean Energy Tax Credits</option>
+<option value="climate-week-nyc">Climate Week NYC</option>
+<option value="coast-to-coast">Coast to Coast</option>
+<option value="commodities-forecast">Commodities Forecast</option>
+<option value="commodities-webinar-series">Commodities Webinar Series</option>
+<option value="compliance-week-sec-survey">Compliance Week SEC Survey</option>
+<option value="cop28">COP28</option>
+<option value="corporate-counsel-women-of-color">Corporate Counsel Women of Color</option>
+<option value="crossroads-icr-insights">Crossroads - ICR Insights</option>
+<option value="data-center-insights-with-dla-piper">Data Center Insights with DLA Piper</option>
+<option value="discover-dla-piper">Discover DLA Piper</option>
+<option value="emerging-leaders">Emerging Leaders</option>
+<option value="environmental-and-catastrophic-events">Environmental and Catastrophic Events</option>
+<option value="esg-eu-legislation-series">ESG EU Legislation Series</option>
+<option value="esg-sec-climate-change-rule">ESG SEC Climate Change Rule</option>
+<option value="esg-video-series">ESG Video Series</option>
+<option value="ey-eoy">EY EOY</option>
+<option value="fda-in-focus">Fda in Focus</option>
+<option value="financial-futures-event">Financial Futures Event</option>
+<option value="financial-times">Financial Times</option>
+<option value="fs-ripple-emerging-trends">FS Ripple Emerging Trends</option>
+<option value="fund-finance-webinar-series">Fund Finance Webinar Series</option>
+<option value="global-employer-briefing">Global Employer Briefing</option>
+<option value="global-expansion-webinar-series">Global Expansion Webinar Series</option>
+<option value="global-life-sciences-summit-2025">Global Life Sciences Summit 2025</option>
+<option value="global-litigation-guide">global litigation guide</option>
+<option value="global-class-actions-summit">Global Class Actions Summit</option>
+<option value="global-womens-leadership-summit">Global Womens Leadership Summit</option>
+<option value="governance-and-risk-in-context">Governance and Risk in Context</option>
+<option value="gres">GRES</option>
+<option value="healthcare-jpm-conf">Healthcare JPM Conf</option>
+<option value="hispanic-heritage-month">Hispanic Heritage Month</option>
+<option value="horizon">Horizon</option>
+<option value="impact">impact</option>
+<option value="inclusion-forum">Inclusion Forum</option>
+<option value="intellectual-property-and-technology-news">Intellectual Property and Technology News</option>
+<option value="investing-in-the-game">Investing in the Game</option>
+<option value="inside-competition">Inside Competition</option>
+<option value="ip-women-in-patent-lit-videos">IP Women in Patent Lit Videos</option>
+<option value="jpmc2025">jpmc2025</option>
+<option value="krantz-fellowship">Krantz Fellowship</option>
+<option value="lateral-partners">Lateral Partners</option>
+<option value="lcld">LCLD</option>
+<option value="leap-program">Leap Program</option>
+<option value="life-sciences-summit">Life Sciences Summit</option>
+<option value="ls-podcast">LS Podcast</option>
+<option value="ma-summit-2025">MA Summit 2025</option>
+<option value="ma-intelligence-report">MA Intelligence Report</option>
+<option value="ma-summit-2024">MA Summit 2024</option>
+<option value="ma-summit-recap">MA Summit Recap</option>
+<option value="ma-women-dealmakers">MA Women Dealmakers</option>
+<option value="mark-it">Mark It</option>
+<option value="market-edge-blog">Market Edge Blog</option>
+<option value="mse-sport-forum">MSE Sport Forum</option>
+<option value="mse-video-series">MSE Video Series</option>
+<option value="mwc25">MWC25</option>
+<option value="napba">napba</option>
+<option value="ny-circular">NY Circular</option>
+<option value="office-hours-burr">Office Hours Burr</option>
+<option value="panorama-podcast">Panorama Podcast</option>
+<option value="panorama-publication">Panorama Publication</option>
+<option value="policy-matters-events">Policy Matters Events</option>
+<option value="pricing-rules-podcast">Pricing Rules Podcast</option>
+<option value="pride">Pride</option>
+<option value="privacy-matters-blog">Privacy Matters Blog</option>
+<option value="privacy-matters-video-series">Privacy Matters Video Series</option>
+<option value="private-credit-and-ai">Private Credit and AI</option>
+<option value="pro-bono-bulletin">Pro Bono Bulletin</option>
+<option value="pro-bono-month">Pro Bono Month</option>
+<option value="product-liability-pgoty">Product Liability PGOTY</option>
+<option value="product-liability-symposium">Product Liability Symposium</option>
+<option value="proximo">Proximo</option>
+<option value="raja-gaddipati-fellowship">Raja Gaddipati Fellowship</option>
+<option value="real-estate-trends">Real Estate Trends</option>
+<option value="reit-tax">REIT Tax</option>
+<option value="rsgi-podcast">RSGI Podcast</option>
+<option value="scg">SCG</option>
+<option value="sec-private-funds-ruling">SEC Private Funds Ruling</option>
+<option value="sf-climate-week">SF Climate Week</option>
+<option value="space-exploration-innovation-practice">Space Exploration Innovation Practice</option>
+<option value="state-of-the-market">State of the Market</option>
+<option value="summer-associates">Summer Associates</option>
+<option value="talking-space">Talking Space</option>
+<option value="tech-digital-evolution-hub">TECH Digital Evolution hub</option>
+<option value="tech-index">Tech Index</option>
+<option value="tech-summit">Tech Summit</option>
+<option value="telecom-laws-of-the-world">Telecom Laws of the World</option>
+<option value="telecom-mwc24">Telecom MWC24</option>
+<option value="telecom-mwc26">Telecom MWC24</option>
+<option value="thought-for-food">Thought for Food</option>
+<option value="trending-in-transactions-newsletter">Trending in Transactions Newsletter</option>
+<option value="un-ai-for-good">UN AI for Good</option>
+<option value="us-sustainability-report">US Sustainability Report</option>
+<option value="us-africa-business-summit">US-Africa Business Summit</option>
+<option value="vc-open">VC-Open</option>
+<option value="veterans-day">veterans-day</option>
+<option value="washington-matters-podcast">washington-matters-podcast</option>
+<option value="why-i-lawyer">Why I Lawyer</option>
+<option value="womens-history-month">Womens History Month</option>
+<option value="year-in-review">year-in-review</option>
+<option value="ypo">YPO</option>
+  </select>
+
+  <br>
+
+  <label for="utm_term">Select Capability:</label>
+  <select id="utm_term" name="utm_term">
+    <option value=""></option>
+    <option value="artificial-intelligence">Artificial Intelligence</option>
+    <option value="brand">Brand</option>
+    <option value="capital-solutions">Capital Solutions</option>
+    <option value="careers">Careers</option>
+    <option value="cgfr">Consumer Good, Food and Retail</option>
+    <option value="corporate">Corporate</option>
+    <option value="diversity">Diversity</option>
+    <option value="dpps">DPPS</option>
+    <option value="employment">Employment</option>
+    <option value="enr">Energy and Natural Resource</option>
+    <option value="esg">ESG</option>
+    <option value="finance">Finance</option>
+    <option value="fs">Financial Services</option>
+    <option value="franchise">Franchise</option>
+    <option value="healthcare">Healthcare</option>
+    <option value="ict">ICT</option>
+    <option value="imf">IMF</option>
+    <option value="industrials">Industrials</option>
+    <option value="insurance">Insurance</option>
+    <option value="ip">Intellectual Property</option>
+    <option value="lai">LAI</option>
+    <option value="ls">Life Sciences</option>
+    <option value="ma">Mergers & Acquisitions</option>
+    <option value="mse">Media, Sport and Entertainment</option>
+    <option value="private-equity">Private Equity</option>
+    <option value="pro-bono">Pro Bono</option>
+    <option value="real-estate">Real Estate</option>
+    <option value="restructuring">Restructuring</option>
+    <option value="rga">Regulatory and Government Affairs</option>
+    <option value="scc">SCC</option>
+    <option value="tax">Tax</option>
+    <option value="technology">Technology</option>
+  </select>
+
+  <br>
+
+  <label for="utm_content">Select Content Type:</label>
+  <select id="utm_content" name="utm_content">
+    <option value=""></option>
+    <option value="event">Event</option>
+    <option value="podcast">Podcast</option>
+    <option value="press-release">Press Release</option>
+    <option value="publication">Publication</option>
+    <option value="summit">Summit</option>
+    <option value="survey">Survey</option>
+    <option value="video">Video</option>
+    <option value="webinar">Webinar</option>
+  </select>
+</form>
+   
+   <br>
+
+        <button type="button" onclick="generateLink()" id="submit" class="submit-button">Generate Link</button>
+    </form>
+
+<!-- Result
+    <div class="result" id="result"></div> -->
+   
+    <h4 style="padding-top:50px;">Use the link below to track content more effectively.</h4>
+ 
+  <p class="center"><i>Please note that the URL below is generated using the information provided above.</i></p>
+
+  <div style="padding-top:0px;">
+  <result-box class="output-textarea" id="result"style="word-wrap: break-word; width: 100%;"></result-box>
+  </div>
+   
+    <br>
+
+
+  <footer>
+    <p class="center"><i>Custom URL Builder v1.1. Created by the Digital Analytics Team</i></p>
+    </footer>
+
+</body>
+   
+ <script>
+function updateSource() {
+  const medium = document.getElementById('medium').value;
+  const source = document.getElementById('source');
+  source.innerHTML = '';
+
+  let options = [];
+  const sources = {
+    'email': [
+      { value: 'vuture', text: 'Vuture' },
+      { value: 'cerkl', text: 'Cerkl' },
+      { value: 'connected', text: 'Connected' },
+      { value: 'cvent', text: 'CVent' },
+      { value: 'hubspot', text: 'Hubspot' }
+    ],
+    'social': [
+      { value: 'linkedin_company', text: 'LinkedIn Global' },
+      { value: 'linkedin-energy-setor', text: 'LinkedIn - DLA Piper Energy Sector' },
+      { value: 'linkedin-financial-services', text: 'LinkedIn - DLA Piper Financial Services' },
+      { value: 'linkedin-ict', text: 'LinkedIn - DLA Piper ICT' },
+      { value: 'linkedin-insurance', text: 'LinkedIn - DLA Piper Insurance' },
+      { value: 'linkedin-latam', text: 'LinkedIn - DLA Piper in Latin America' },
+      { value: 'linkedin-ls', text: 'LinkedIn - DLA Piper Life Sciences Sector' },
+      { value: 'linkedin-mse', text: 'LinkedIn - DLA Piper Media, Sports and Entertainment Sector' },
+      { value: 'linkedin-real-estate', text: 'LinkedIn - DLA Piper Real Estate' },
+      { value: 'linkedin-technology', text: 'LinkedIn - DLA Piper Technology Sector' },
+      { value: 'linkedin-venture-capital', text: 'LinkedIn - DLA Piper Venture Capital' },
+      { value: 'bambu', text: 'Advocacy' },
+      { value: 'facebook', text: 'Facebook' },
+      { value: 'instagram', text: 'Instagram' },
+      { value: 'twitter', text: 'X (Twitter) Global' },
+      { value: 'twitter-real-estate', text: 'X (Twitter) - DLA Piper Real Estate' },
+      { value: 'line', text: 'Line' },
+      { value: 'wechat', text: 'WeChat' },
+      { value: 'whatsapp', text: 'Whatsapp' },
+      { value: 'youtube', text: 'YouTube' },
+      { value: 'hubspot', text: 'Hubspot' }
+    ],
+    'social-paid': [
+      { value: 'linkedin_company', text: 'LinkedIn Global' },
+      { value: 'linkedin-energy-setor', text: 'LinkedIn - DLA Piper Energy Sector' },
+      { value: 'linkedin-financial-services', text: 'LinkedIn - DLA Piper Financial Services' },
+      { value: 'linkedin-ict', text: 'LinkedIn - DLA Piper ICT' },
+      { value: 'linkedin-insurance', text: 'LinkedIn - DLA Piper Insurance' },
+      { value: 'linkedin-latam', text: 'LinkedIn - DLA Piper in Latin America' },
+      { value: 'linkedin-ls', text: 'LinkedIn - DLA Piper Life Sciences Sector' },
+      { value: 'linkedin-mse', text: 'LinkedIn - DLA Piper Media, Sports and Entertainment Sector' },
+      { value: 'linkedin-real-estate', text: 'LinkedIn - DLA Piper Real Estate' },
+      { value: 'linkedin-technology', text: 'LinkedIn - DLA Piper Technology Sector' },
+      { value: 'linkedin-venture-capital', text: 'LinkedIn - DLA Piper Venture Capital' },
+      { value: 'facebook', text: 'Facebook' },
+      { value: 'instagram', text: 'Instagram' },
+      { value: 'twitter', text: 'X (Twitter) Global' },
+      { value: 'twitter-real-estate', text: 'X (Twitter) - DLA Piper Real Estate' },
+      { value: 'line', text: 'Line' },
+      { value: 'wechat', text: 'WeChat' },
+      { value: 'whatsapp', text: 'Whatsapp' },
+      { value: 'youtube', text: 'YouTube' },
+      { value: 'hubspot', text: 'Hubspot' }
+    ],
+    'cpc': [
+      { value: 'bing', text: 'Bing' },
+      { value: 'google', text: 'Google' }
+    ]
+  };
+
+  options = sources[medium] || [];
+  options.unshift({ value: '', text: '' });
+
+  options.forEach(option => {
+    const newOption = document.createElement('option');
+    newOption.value = option.value;
+    newOption.textContent = option.text;
+    source.appendChild(newOption);
+  });
+}
+
+function updateCampaigns() {
+  const region = document.getElementById("region").value;
+  const campaignSelect = document.getElementById("utm_campaign");
+
+  campaignSelect.innerHTML = "";
+
+  const campaignOptions = {
+    "us": [
+      { value: "", text: "" },
+      { value: "aaaim-allyship-event", text: "AAAIM Allyship Event" },
+{ value: "aapi-heritage-month", text: "AAPI Heritage Month" },
+{ value: "ai-chatroom", text: "AI ChatRoom" },
+{ value: "ai-laws-world-tool", text: "AI Laws of the World" },
+{ value: "ai-litigation", text: "AI litigation" },
+{ value: "ai-red-teaming", text: "AI Red Teaming" },
+{ value: "ai-cocounsel", text: "AI CoCounsel" },
+{ value: "ai-testing-hc-ls", text: "AI Testing HC LS" },
+{ value: "alumni-navigating-alternative-career-paths", text: "Alumni Navigating Alternative Career Paths" },
+{ value: "alumni-peoplepath", text: "Alumni Peoplepath" },
+{ value: "are-you-ready", text: "Are You Ready" },
+{ value: "asia-ip-symposium", text: "Asia IP Symposium" },
+{ value: "associate-recruiting", text: "Associate Recruiting" },
+{ value: "beyond-the-curve-podcast", text: "Beyond the Curve Podcast" },
+{ value: "bihc-report", text: "BIHC Report" },
+{ value: "bio-med-bootcamp", text: "Bio Med Bootcamp" },
+{ value: "black-history-month", text: "Black History Month" },
+{ value: "board-awareness", text: "Board Awareness" },
+{ value: "building-strong-ip-foundations", text: "Building Strong IP Foundations" },
+{ value: "cgr-speaker-series", text: "CGR Speaker Series" },
+{ value: "chambers", text: "chambers" },
+{ value: "clean-energy-tax-credits", text: "Clean Energy Tax Credits" },
+{ value: "climate-week-nyc", text: "Climate Week NYC" },
+{ value: "coast-to-coast", text: "Coast to Coast" },
+{ value: "commodities-forecast", text: "Commodities Forecast" },
+{ value: "commodities-webinar-series", text: "Commodities Webinar Series" },
+{ value: "compliance-week-sec-survey", text: "Compliance Week SEC Survey" },
+{ value: "cop28", text: "COP28" },
+{ value: "corporate-counsel-women-of-color", text: "Corporate Counsel Women of Color" },
+{ value: "crossroads-icr-insights", text: "Crossroads - ICR Insights" },
+{ value: "data-center-insights-with-dla-piper", text: "Data Center Insights with DLA Piper" },
+{ value: "discover-dla-piper", text: "Discover DLA Piper" },
+{ value: "emerging-leaders", text: "Emerging Leaders" },
+{ value: "environmental-and-catastrophic-events", text: "Environmental and Catastrophic Events" },
+{ value: "esg-eu-legislation-series", text: "ESG EU Legislation Series" },
+{ value: "esg-sec-climate-change-rule", text: "ESG SEC Climate Change Rule" },
+{ value: "esg-video-series", text: "ESG Video Series" },
+{ value: "ey-eoy", text: "EY EOY" },
+{ value: "fda-in-focus", text: "Fda in Focus" },
+{ value: "financial-futures-event", text: "Financial Futures Event" },
+{ value: "financial-times", text: "Financial Times" },
+{ value: "fs-ripple-emerging-trends", text: "FS Ripple Emerging Trends" },
+{ value: "fund-finance-webinar-series", text: "Fund Finance Webinar Series" },
+{ value: "global-employer-briefing", text: "Global Employer Briefing" },
+{ value: "global-expansion-webinar-series", text: "Global Expansion Webinar Series" },
+{ value: "global-life-sciences-summit-2025", text: "2025 Global Life Sciences Summit" },
+{ value: "global-litigation-guide", text: "global litigation guide" },
+{ value: "global-class-actions-summit", text: "Global Class Actions Summit" },
+{ value: "global-womens-leadership-summit", text: "Global Womens Leadership Summit" },
+{ value: "governance-and-risk-in-context", text: "Governance and Risk in Context" },
+{ value: "gres", text: "GRES" },
+{ value: "healthcare-jpm-conf", text: "Healthcare JPM Conf" },
+{ value: "hispanic-heritage-month", text: "Hispanic Heritage Month" },
+{ value: "horizon", text: "Horizon" },
+{ value: "impact", text: "impact" },
+{ value: "inclusion-forum", text: "Inclusion Forum" },
+{ value: "inside-competition", text: "Inside Competition" },
+{ value: "intellectual-property-and-technology-news", text: "Intellectual Property and Technology News" },
+{ value: "investing-in-the-game", text: "Investing in the Game" },
+{ value: "ip-women-in-patent-lit-videos", text: "IP Women in Patent Lit Videos" },
+{ value: "jpmc2025", text: "jpmc2025" },
+{ value: "krantz-fellowship", text: "Krantz Fellowship" },
+{ value: "lateral-partners", text: "Lateral Partners" },
+{ value: "lcld", text: "LCLD" },
+{ value: "leap-program", text: "Leap Program" },
+{ value: "life-sciences-summit", text: "Life Sciences Summit" },
+{ value: "ls-podcast", text: "LS Podcast" },
+{ value: "ma-summit-2025", text: "MA Summit 2025" },
+{ value: "ma-intelligence-report", text: "MA Intelligence Report" },
+{ value: "ma-summit-2024", text: "MA Summit 2024" },
+{ value: "ma-summit-recap", text: "MA Summit Recap" },
+{ value: "ma-women-dealmakers", text: "MA Women Dealmakers" },
+{ value: "mark-it", text: "Mark It" },
+{ value: "market-edge-blog", text: "Market Edge Blog" },
+{ value: "mse-sport-forum", text: "MSE Sport Forum" },
+{ value: "mse-video-series", text: "MSE Video Series" },
+{ value: "mwc25", text: "MWC25" },
+{ value: "napba", text: "napba" },
+{ value: "ny-circular", text: "NY Circular" },
+{ value: "office-hours-burr", text: "Office Hours Burr" },
+{ value: "panorama-podcast", text: "Panorama Podcast" },
+{ value: "panorama-publication", text: "Panorama Publication" },
+{ value: "policy-matters-events", text: "Policy Matters Events" },
+{ value: "pricing-rules-podcast", text: "Pricing Rules Podcast" },
+{ value: "pride", text: "Pride" },
+{ value: "privacy-matters-blog", text: "Privacy Matters Blog" },
+{ value: "privacy-matters-video-series", text: "Privacy Matters Video Series" },
+{ value: "private-credit-and-ai", text: "Private Credit and AI" },
+{ value: "pro-bono-bulletin", text: "Pro Bono Bulletin" },
+{ value: "pro-bono-month", text: "Pro Bono Month" },
+{ value: "product-liability-pgoty", text: "Product Liability PGOTY" },
+{ value: "product-liability-symposium", text: "Product Liability Symposium" },
+{ value: "proximo", text: "Proximo" },
+{ value: "raja-gaddipati-fellowship", text: "Raja Gaddipati Fellowship" },
+{ value: "real-estate-trends", text: "Real Estate Trends" },
+{ value: "reit-tax", text: "REIT Tax" },
+{ value: "rsgi-podcast", text: "RSGI Podcast" },
+{ value: "scg", text: "SCG" },
+{ value: "sec-private-funds-ruling", text: "SEC Private Funds Ruling" },
+{ value: "sf-climate-week", text: "SF Climate Week" },
+{ value: "space-exploration-innovation-practice", text: "Space Exploration Innovation Practice" },
+{ value: "state-of-the-market", text: "State of the Market" },
+{ value: "summer-associates", text: "Summer Associates" },
+{ value: "talking-space", text: "Talking Space" },
+{ value: "tech-digital-evolution-hub", text: "TECH Digital Evolution hub" },
+{ value: "tech-index", text: "Tech Index" },
+{ value: "tech-summit", text: "Tech Summit" },
+{ value: "telecom-laws-of-the-world", text: "Telecom Laws of the World" },
+{ value: "telecom-mwc24", text: "Telecom MWC24" },
+{ value: "telecom-mwc24", text: "Telecom MWC26" },
+{ value: "thought-for-food", text: "Thought for Food" },
+{ value: "trending-in-transactions-newsletter", text: "Trending in Transactions Newsletter" },
+{ value: "un-ai-for-good", text: "UN AI for Good" },
+{ value: "us-sustainability-report", text: "US Sustainability Report" },
+{ value: "us-africa-business-summit", text: "US-Africa Business Summit" },
+{ value: "vc-open", text: "VC-Open" },
+{ value: "veterans-day", text: "veterans-day" },
+{ value: "washington-matters-podcast", text: "washington-matters-podcast" },
+{ value: "why-i-lawyer", text: "Why I Lawyer" },
+{ value: "womens-history-month", text: "Womens History Month" },
+{ value: "year-in-review", text: "year-in-review" },
+{ value: "ypo", text: "YPO" }
+    ],
+    "international": [
+      { value: "", text: "" },
+      { value: "cop28", text: "COP 28" }
+    ],
+    "latam": [
+      { value: "", text: "" },
+      { value: "panorama", text: "Panorama" }
+    ],
+    "canada": [
+      { value: "", text: "" },
+      { value: "canada", text: "Canada" }
+    ],
+    "korea": [
+      { value: "", text: "" },
+      { value: "asia-ip-symposium", text: "Asia IP Symposium" }
+    ],
+    "japan": [
+      { value: "", text: "" },
+      { value: "asia-ip-symposium", text: "Asia IP Symposium" }
+    ]
+  };
+
+  const options = campaignOptions[region] || [{ value: "", text: "" }];
+  options.forEach(opt => {
+    const option = document.createElement("option");
+    option.value = opt.value;
+    option.text = opt.text;
+    campaignSelect.appendChild(option);
+  });
+}
+
+function generateLink() {
+  const url = document.getElementById('url').value;
+  const utm_source = document.getElementById('source').value;
+  const utm_medium = document.getElementById('medium').value;
+  const utm_campaign = document.getElementById('utm_campaign').value;
+  const region = document.getElementById('region').value;
+  const capability = document.getElementById('utm_term').value;
+  const utm_content = document.getElementById('utm_content').value;
+
+  if (!utm_source || !utm_medium) {
+    document.getElementById('result').innerText = 'Error! Please select a source and medium.';
+    document.getElementById('result').style.color = 'red';
+    return;
+  }
+
+  let utm_term = '';
+  if (region && capability) {
+    utm_term = `${region}-${capability}`;
+  } else if (region) {
+    utm_term = region;
+  } else if (capability) {
+    utm_term = capability;
+  }
+
+  let params = new URLSearchParams();
+  if (utm_source) params.append('utm_source', utm_source);
+  if (utm_medium) params.append('utm_medium', utm_medium);
+  if (utm_campaign) params.append('utm_campaign', utm_campaign);
+  if (utm_term) params.append('utm_term', utm_term);
+  if (utm_content) params.append('utm_content', utm_content);
+
+  const customLink = url + (params.toString() ? '?' + params.toString() : '');
+  document.getElementById('result').innerText = customLink;
+  document.getElementById('result').style.color = 'black';
+}
+
+// Event listeners
+document.getElementById("region").addEventListener("change", updateCampaigns);
+document.getElementById("medium").addEventListener("change", updateSource);
+</script>
